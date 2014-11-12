@@ -15,3 +15,6 @@ toc:
 - title: Web <strong>Fundamentals</strong>
   path: /fundamentals/
   in_header: false
+- title: Case Studies
+  path: /case-studies/
+  in_header: false

@@ -1,0 +1,66 @@
+/**
+*
+* Case Studies Header
+*
+* Google Web Fundamentals
+*
+* R/GA 2014
+* @author Pedro Duarte
+* @author Antoine Grelard
+*
+**/
+
+.cs-header {
+  background: $colorMonetization no-repeat center center;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: $lineHeight*3;
+  margin-bottom: $lineHeight*3;
+
+  &:after {
+    @extend .icon-star:before;
+    font-family: $fontIcon;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 50px;
+    bottom: -10px;
+
+    @include medium {
+      font-size: $fontXXLarge;
+      line-height: 1px;
+      bottom: 4px;
+    }
+
+    font-weight: 500;
+    color: $colorMonetizationSecondary;
+  }
+
+
+  & h1 {
+    @include type--xxlarge;
+
+    @include small-only {
+      @include type--xlarge(true);
+      padding-top: $lineHeight*2;
+      @include color-inherit;
+    }
+
+    @include medium {
+      padding-top: $lineHeight*3;
+    }
+
+    @include color-inherit;
+  }
+
+  & p {
+    @include type--large;
+
+    @include color-inherit;
+  }
+
+  & a {
+    margin-top: $lineHeight*2 + $lineHeight/2;
+  }
+}
