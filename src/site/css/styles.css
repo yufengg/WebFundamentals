@@ -1368,7 +1368,7 @@ li > p {
 }
 
 /* line 168, ../_sass/_components/_icons.scss */
-.icon-star:before, .home-header:after {
+.icon-star:before, .home-header:after, .cs-header:after {
   content: "\e01c";
 }
 
@@ -3890,6 +3890,144 @@ body[dir=rtl] .editorial-header .container:before {
 
 /**
 *
+* Case Studies Header
+*
+* Google Web Fundamentals
+*
+* R/GA 2014
+* @author Pedro Duarte
+* @author Antoine Grelard
+*
+**/
+/* line 13, ../_sass/_modules/_cs-header.scss */
+.cs-header {
+  background: #056f00 no-repeat center center;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 78px;
+  margin-bottom: 78px;
+}
+/* line 20, ../_sass/_modules/_cs-header.scss */
+.cs-header:after {
+  font-family: "icons";
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 50px;
+  bottom: -10px;
+  font-weight: 500;
+  color: #14ff09;
+}
+@media only screen and (min-width: 620px) {
+  /* line 20, ../_sass/_modules/_cs-header.scss */
+  .cs-header:after {
+    font-size: 68px;
+    line-height: 1px;
+    bottom: 4px;
+  }
+}
+/* line 41, ../_sass/_modules/_cs-header.scss */
+.cs-header h1 {
+  color: #404040;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1.2381em;
+  /* 52px */
+  padding-top: 0.6190em;
+  padding-bottom: 0;
+  letter-spacing: -0.3px;
+  color: inherit;
+}
+@media only screen and (min-width: 800px) {
+  /* line 41, ../_sass/_modules/_cs-header.scss */
+  .cs-header h1 {
+    color: #404040;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.1471em;
+    /* 78px */
+    padding-top: 0.3824em;
+    padding-bottom: 0;
+    letter-spacing: -3px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  /* line 41, ../_sass/_modules/_cs-header.scss */
+  .cs-header h1 {
+    color: #404040;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.2381em;
+    /* 52px */
+    padding-top: 0.6190em;
+    padding-bottom: 0;
+    letter-spacing: -0.3px;
+    padding-top: 52px;
+    color: inherit;
+  }
+}
+@media only screen and (max-width: 619px) and (min-width: 620px) {
+  /* line 41, ../_sass/_modules/_cs-header.scss */
+  .cs-header h1 {
+    color: inherit;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  /* line 41, ../_sass/_modules/_cs-header.scss */
+  .cs-header h1 {
+    padding-top: 78px;
+  }
+}
+@media only screen and (min-width: 620px) {
+  /* line 41, ../_sass/_modules/_cs-header.scss */
+  .cs-header h1 {
+    color: inherit;
+  }
+}
+/* line 57, ../_sass/_modules/_cs-header.scss */
+.cs-header p {
+  color: #404040;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+  letter-spacing: -0.3px;
+  color: inherit;
+}
+@media only screen and (min-width: 800px) {
+  /* line 57, ../_sass/_modules/_cs-header.scss */
+  .cs-header p {
+    color: #404040;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.0000em;
+    /* 26px */
+    padding-top: 1.0000em;
+    padding-bottom: 0;
+    letter-spacing: -0.3px;
+  }
+}
+@media only screen and (min-width: 620px) {
+  /* line 57, ../_sass/_modules/_cs-header.scss */
+  .cs-header p {
+    color: inherit;
+  }
+}
+/* line 63, ../_sass/_modules/_cs-header.scss */
+.cs-header a {
+  margin-top: 65px;
+}
+
+/**
+*
 * Text module
 *
 * Google Web Fundamentals
@@ -4485,7 +4623,7 @@ body[dir=rtl] .editorial-header .container:before {
 @media only screen and (min-width: 620px) {
   /* line 32, ../_sass/_modules/_latest-spotlights.scss */
   .latest-spotlights__item {
-    width: 50%;
+    width: 20%;
     float: left;
     margin-top: 2px;
   }

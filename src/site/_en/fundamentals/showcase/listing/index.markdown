@@ -30,7 +30,7 @@ collection: showcase
   <div class="container-medium">
     <div class="featured-spotlight__container g--pull-half">
       <div class="featured-spotlight__img">
-        <img src="../../imgs/placeholder--featured-spotlight.png" alt="image exemple">
+        <img src="../../../imgs/placeholder--featured-spotlight.png" alt="image exemple">
       </div>
 
       <div class="container-small">
@@ -53,7 +53,7 @@ collection: showcase
             <a href="#" class="cta--primary">View Google</a>
           </div>
           <figure class="featured-list__img-wrapper g--half g--last">
-            <img src="../../imgs/placeholder--medium.png" alt="image exemple">
+            <img src="../../../imgs/placeholder--medium.png" alt="image exemple">
           </figure>
         </div>
       </li>
@@ -68,7 +68,7 @@ collection: showcase
             <a href="#" class="cta--primary">View Google</a>
           </div>
           <figure class="featured-list__img-wrapper g--half g--last">
-            <img src="../../imgs/placeholder--medium.png" alt="image exemple">
+            <img src="../../../imgs/placeholder--medium.png" alt="image exemple">
           </figure>
         </div>
       </li>
@@ -85,37 +85,37 @@ collection: showcase
       <ul class="related-items-list list-reset">
         <li class="g-medium--1 g-wide--1 theme--multi-device-layouts">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides title which goes over two lines</p>
           </a>
         </li>
         <li class="g-medium--1 g-wide--1 theme--introduction-to-media">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides completely device agnostic site created for the this website</p>
           </a>
         </li>
         <li class="g-medium--1 g-medium--last g-wide--1 g-wide--last theme--performance">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides new, completely device agnostic site created for the this website</p>
           </a>
         </li>
         <li class="g-medium--1 g-wide--1 theme--multi-device-layouts">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides title which goes over two lines</p>
           </a>
         </li>
         <li class="g-medium--1 g-wide--1 theme--introduction-to-media">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides completely device agnostic site created for the this website</p>
           </a>
         </li>
         <li class="g-medium--1 g-medium--last g-wide--1 g-wide--last theme--performance">
           <a href="#">
-            <img src="../../imgs/placeholder--small.png" alt="Case study name">
+            <img src="../../../imgs/placeholder--small.png" alt="Case study name">
             <p class="medium">Guides new, completely device agnostic site created for the this website</p>
           </a>
         </li>

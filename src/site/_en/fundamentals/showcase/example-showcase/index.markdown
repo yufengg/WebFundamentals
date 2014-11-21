@@ -1,10 +1,10 @@
 ---
 layout: showcase
-title: "Showcase example"
+title: "Yelp"
 published: false
 description: "This is an example of a showcase page"
 introduction: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, iste, natus, eius laborum error ad voluptatibus."
-header_image: ../../imgs/placeholder--device-landscape.png
+header_image: ../../../imgs/placeholder--device-landscape.png
 header_orientation: landscape
 class: showcase
 our_views:
@@ -20,15 +20,15 @@ other_case_studies:
   - title: Case study number one
     description: Case study title
     link: /spotlights/example-showcase/
-    image: ../../imgs/image-example-2.jpg
+    image: ../../../imgs/image-example-2.jpg
   - title: Case study number two
     description: Case study title
     link: /spotlights/example-showcase/
-    image: ../../imgs/image-example-3.jpg
+    image: ../../../imgs/image-example-3.jpg
   - title: Case study number three
     description: Case study title
     link: /spotlights/example-showcase/
-    image: ../../imgs/image-example-4.jpg
+    image: ../../../imgs/image-example-4.jpg
 related_guides:
   - title: Related guide number one
     link: /spotlights/example-showcase/
@@ -48,7 +48,7 @@ collection: resources
 <div class="case-study-wrapper has-video-after">
   <div class="container clear">
     <div class="g--half">
-      <h2>Title goes here</h2>
+      <h2>Yelp</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, fugit, quod, necessitatibus, eveniet praesentium id atque possimus placeat quo earum perferendis et laudantium eaque excepturi modi maiores facilis nam veritatis!</p>
       <dl>
         <dt>Who</dt>
@@ -60,7 +60,7 @@ collection: resources
       </dl>
     </div>
     <figure class="case-study__img-wrapper g--half g--last">
-      <img src="../../imgs/placeholder--side-by-side.png" alt="image placeholder" class="fluid">
+      <img src="../../../imgs/placeholder--side-by-side.png" alt="image placeholder" class="fluid">
     </figure>
   </div>
 </div>
@@ -93,7 +93,7 @@ collection: resources
     <div class="centered g--half g--last">
       <h3>Key users</h3>
       <figure class="case-study__img-wrapper contained">
-        <img src="../../imgs/placeholder--square.png" alt="image placeholder" class="fluid">
+        <img src="../../../imgs/placeholder--square.png" alt="image placeholder" class="fluid">
         <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, porro eius.</figcaption>
       </figure>
     </div>
