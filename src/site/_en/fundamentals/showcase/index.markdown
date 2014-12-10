@@ -35,7 +35,7 @@ NOTE: the spotlight header required a modifier to render properly
 
 <div class="latest-spotlights">
   <div class="container clear">
-    <h2>In the spotlight</h2>
+    <h2>Also noteworthy</h2>
 
     <ul class="latest-spotlights__list list-reset">
       <li class="latest-spotlights__item">
