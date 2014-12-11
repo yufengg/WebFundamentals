@@ -40,7 +40,7 @@ NOTE: the spotlight header required a modifier to render properly
 
     <ul class="latest-spotlights__list list-reset">
       <li class="latest-spotlights__item">
-        <a href="./example-showcase" class="latest-spotlights__link">
+        <a href="./example-spotlight" class="latest-spotlights__link">
           <img src="../../imgs/image-portrait.jpg" alt="image example">
           <p class="small">Spotlight</p>
         </a>
@@ -51,7 +51,7 @@ NOTE: the spotlight header required a modifier to render properly
         </div>
       </li>
       <li class="latest-spotlights__item">
-        <a href="./example-showcase" class="latest-spotlights__link">
+        <a href="./example-spotlight" class="latest-spotlights__link">
           <img src="../../imgs/image-portrait.jpg" alt="image example">
           <p class="small">Spotlight</p>
         </a>
@@ -80,7 +80,7 @@ NOTE: the spotlight header required a modifier to render properly
               Yelp
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-            <a href="#" class="cta--primary">Read the case study</a>
+            <a href="./example-showcase" class="cta--primary">Read the case study</a>
           </div>
           <figure class="featured-list__img-wrapper g--half g--last">
             <img src="../../../imgs/placeholder--medium.png" alt="image example">
@@ -101,7 +101,7 @@ NOTE: the spotlight header required a modifier to render properly
                 Some Spotlight
               </h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="cta--primary">View Spotlight</a>
+              <a href="./example-spotlight" class="cta--primary">View Spotlight</a>
             </div>
             <figure class="featured-list__img-wrapper g--half g--last">
               <img src="../../imgs/image-portrait.jpg" alt="image example">
@@ -117,7 +117,7 @@ NOTE: the spotlight header required a modifier to render properly
                 Some Spotlight
               </h3>
               <p>Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-              <a href="#" class="cta--primary">View Spotlight</a>
+              <a href="./example-spotlight" class="cta--primary">View Spotlight</a>
             </div>
             <figure class="featured-list__img-wrapper g--half g--last">
               <img src="../../imgs/image-portrait.jpg" alt="image example">

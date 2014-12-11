@@ -4769,24 +4769,41 @@ body[dir=rtl] .editorial-header .container:before {
 .case-study-wrapper {
   padding-top: 26px;
   padding-bottom: 52px;
+  background: #f0f0f0;
 }
 @media only screen and (min-width: 620px) {
   /* line 13, ../_sass/_modules/_case-study-wrapper.scss */
   .case-study-wrapper {
     margin-top: -156px;
     padding-top: 78px;
-    background: #f0f0f0;
+    background: linear-gradient(to right, #f0f0f0 50%, #888888 50%);
   }
-  /* line 22, ../_sass/_modules/_case-study-wrapper.scss */
+  /* line 24, ../_sass/_modules/_case-study-wrapper.scss */
   .case-study-wrapper.has-video-after {
     margin-bottom: -182px;
     padding-bottom: 208px;
   }
 }
-/* line 28, ../_sass/_modules/_case-study-wrapper.scss */
+/* line 30, ../_sass/_modules/_case-study-wrapper.scss */
 .case-study-wrapper h2 {
   margin-top: 0;
   padding-top: 0;
+}
+
+/* line 37, ../_sass/_modules/_case-study-wrapper.scss */
+.case-study__dl ul {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 620px) {
+  /* line 41, ../_sass/_modules/_case-study-wrapper.scss */
+  .case-study-inverted {
+    color: #fff;
+  }
+  /* line 44, ../_sass/_modules/_case-study-wrapper.scss */
+  .case-study-inverted h2 {
+    color: #fff;
+  }
 }
 
 /**
