@@ -20,11 +20,11 @@ NOTE: the spotlight header required a modifier to render properly
       <div class="divider divider--fluid">
         <span class="divider-icon divider-icon--secondary"></span>
       </div>
-      <h2 class="huge">
-        <strong class="subsection-number">Featured case study</strong>
-        Yelp
+      <h2 class="xlarge">
+        <strong class="subsection-number">January case study</strong>
+        Chrome Dev Summit
       </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, error cupiditate.</p>
+      <p>Built in-house by our own Paul Lewis, the CDS website showed how to build a great mobile web experience for conference visitors.</p>
       <a href="./example-showcase" class="spotlight-header__cta cta--primary">Read the case study</a>
     </div>
     <div class="spotlight-header__media g--half g--last">
@@ -35,38 +35,31 @@ NOTE: the spotlight header required a modifier to render properly
 
 <div class="latest-spotlights">
   <div class="container clear">
-    <h2>Also noteworthy</h2>
+    <h2 class="large">Also noteworthy</h2>
+    <p class="g--half">Sites and apps we love, regardless of their mainstream success. Always pushing the web forward.</p>
 
     <ul class="latest-spotlights__list list-reset">
       <li class="latest-spotlights__item">
         <a href="./example-showcase" class="latest-spotlights__link">
           <img src="../../imgs/image-portrait.jpg" alt="image example">
-          <p class="small">Spotlight name</p>
+          <p class="small">Spotlight</p>
         </a>
+        <div class="latest-spotlights__description">
+          <h3>Spotlight name</h3>
+          <p>Small splotlight descrition noting why this spotlight is such a great app.</p>
+          <a href="#" class="cta--primary">View Spotlight</a>
+        </div>
       </li>
       <li class="latest-spotlights__item">
         <a href="./example-showcase" class="latest-spotlights__link">
           <img src="../../imgs/image-portrait.jpg" alt="image example">
-          <p class="small">Spotlight name</p>
+          <p class="small">Spotlight</p>
         </a>
-      </li>
-      <li class="latest-spotlights__item">
-        <a href="./example-showcase" class="latest-spotlights__link">
-          <img src="../../imgs/image-portrait.jpg" alt="image example">
-          <p class="small">Spotlight name</p>
-        </a>
-      </li>
-      <li class="latest-spotlights__item">
-        <a href="./example-showcase" class="latest-spotlights__link">
-          <img src="../../imgs/image-portrait.jpg" alt="image example">
-          <p class="small">Spotlight name</p>
-        </a>
-      </li>
-      <li class="latest-spotlights__item">
-        <a href="./example-showcase" class="latest-spotlights__link">
-          <img src="../../imgs/image-portrait.jpg" alt="image example">
-          <p class="small">Spotlight name</p>
-        </a>
+        <div class="latest-spotlights__description">
+          <h3>Spotlight name</h3>
+          <p>Small splotlight descrition noting why this spotlight is such a great app.</p>
+          <a href="#" class="cta--primary">View Spotlight</a>
+        </div>
       </li>
     </ul>
   </div>
@@ -74,34 +67,85 @@ NOTE: the spotlight header required a modifier to render properly
 
 <div class="featured-section">
   <div class="container-medium">
-    <ul class="featured-list">
+
+  <h2>Previously</h2>
+
+    <ul>
+
       <li class="featured-list__item clear">
         <div class="container-small">
           <div class="featured-list__content g--half">
-            <h3>Case study</h3>
+            <h3 class="xlarge">
+              <strong class="subsection-number">December case study</strong>
+              Yelp
+            </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-            <a href="#" class="cta--primary">View Google</a>
+            <a href="#" class="cta--primary">Read the case study</a>
           </div>
           <figure class="featured-list__img-wrapper g--half g--last">
             <img src="../../../imgs/placeholder--medium.png" alt="image example">
           </figure>
         </div>
       </li>
+
       <div class="divider divider--fluid divider--spaced">
         <span class="divider-icon divider-icon--secondary"></span>
       </div>
+
+      <div class="spotlights clear">
+        <li class="featured-list__item clear g--half">
+          <div class="container-small">
+            <div class="featured-list__content g--half">
+              <h3 class="xlarge">
+                <strong class="subsection-number">Spotlight</strong>
+                Some Spotlight
+              </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="cta--primary">View Spotlight</a>
+            </div>
+            <figure class="featured-list__img-wrapper g--half g--last">
+              <img src="../../imgs/image-portrait.jpg" alt="image example">
+            </figure>
+          </div>
+        </li>
+
+        <li class="featured-list__item clear g--half g--last">
+          <div class="container-small">
+            <div class="featured-list__content g--half">
+              <h3 class="xlarge">
+                <strong class="subsection-number">Spotlight</strong>
+                Some Spotlight
+              </h3>
+              <p>Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
+              <a href="#" class="cta--primary">View Spotlight</a>
+            </div>
+            <figure class="featured-list__img-wrapper g--half g--last">
+              <img src="../../imgs/image-portrait.jpg" alt="image example">
+            </figure>
+          </div>
+        </li>
+      </div>
+
+      <div class="divider divider--fluid divider--spaced">
+        <span class="divider-icon divider-icon--secondary"></span>
+      </div>
+
       <li class="featured-list__item clear">
         <div class="container-small">
           <div class="featured-list__content g--half">
-            <h3>Case study</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-            <a href="#" class="cta--primary">View Google</a>
+            <h3 class="xlarge">
+              <strong class="subsection-number">October case study</strong>
+              Winning Site
+            </h3>
+            <p>This page is just a pure winner. It wins in so many ways. Let's have a look it its continuous winning.</p>
+            <a href="#" class="cta--primary">Read the case study</a>
           </div>
           <figure class="featured-list__img-wrapper g--half g--last">
             <img src="../../../imgs/placeholder--medium.png" alt="image example">
           </figure>
         </div>
       </li>
+
     </ul>
   </div>
 </div>
