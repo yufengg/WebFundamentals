@@ -4776,7 +4776,7 @@ body[dir=rtl] .editorial-header .container:before {
   .case-study-wrapper {
     margin-top: -156px;
     padding-top: 78px;
-    background: linear-gradient(to right, #f0f0f0 50%, #888888 50%);
+    background: linear-gradient(to right, #ffe168 50%, #cfa600 50%);
   }
   /* line 24, ../_sass/_modules/_case-study-wrapper.scss */
   .case-study-wrapper.has-video-after {

@@ -59,9 +59,9 @@ article:
 collection: resources
 ---
 
-<div class="case-study-wrapper has-video-after">
+<div class="case-study-wrapper">
   <div class="container clear">
-    <div class="g--half">
+    <div class="g--third">
       <h2>Overview</h2>
       <p>{{page.overview.description}}</p>
       <dl class="case-study__dl">
@@ -97,8 +97,12 @@ collection: resources
       </dl>
     </div>
 
-    <div class="g--half g--last case-study-inverted">
-      <h2>Behind the Scenes</h2>
+    <figure class="case-study__img-wrapper g--third">
+      <img src="images/cover.jpg" alt="{{page.title}} on Nexus 5" class="fluid">
+    </figure>
+
+    <div class="g--third g--last case-study-inverted">
+      <h2>Behind the scenes</h2>
       <p>{{page.behind_the_scenes.description}}</p>
       <dl class="case-study__dl">
 
@@ -143,16 +147,16 @@ collection: resources
 
       </dl>
     </div>
-    <!--
-    <figure class="case-study__img-wrapper g--half g--last">
-      <img src="../../../imgs/placeholder--side-by-side.png" alt="image placeholder" class="fluid">
-    </figure>
-    -->
+
   </div>
 </div>
 
 <div class="container clear">
+
+  <div class="content">
+  <h2>The interview</h2>
   {% include modules/video.liquid id="dEGJ8XyZw40" %}
+  </div>
 
   <div class="content">
     <h2>The impact</h2>

@@ -19,7 +19,7 @@
   @include medium {
     margin-top: - $lineHeight*6;
     padding-top: $lineHeight*3;
-    background: linear-gradient(to right, $colorGrayBackground  50%, #888888 50%);
+    background: linear-gradient(to right, #ffe168 50%, #CFA600 50%);
 
     &.has-video-after {
       margin-bottom: - $lineHeight*7;
