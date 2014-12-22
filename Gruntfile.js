@@ -136,6 +136,15 @@ module.exports = function(grunt) {
 				nonull: true,
 				cwd: '<%= config.source %>/css/',
 			},
+			fonts: {
+				src: '*.{woff,woff2,ttf,eot,otf}',
+				dest: '<%= config.destination %>/fonts/',
+				flatten: false,
+				filter: 'isFile',
+				expand:true,
+				nonull: true,
+				cwd: '<%= config.source %>/fonts/',
+			},
 		},
 
 		csslint: {
@@ -296,6 +305,13 @@ module.exports = function(grunt) {
 				tasks: ['compass:uncompressed','cssmin','copy:cssToDest']
 			},
 
+			fonts: {
+				files: [
+					'<%= config.source %>/**/*.{woff2,woff,ttf,otf,eot}',
+				],
+				tasks: ['copy:fonts']
+			},
+
 			// when scripts change, lint them and copy to destination
 			scripts: {
 				files: ['<%= config.source %>/**/*.js'],
@@ -404,6 +420,7 @@ module.exports = function(grunt) {
 				'compass:compressed',		// Build the CSS using Compass with compression
 				'cssmin',					// Minify the combined CSS
 				'wsk-version',  // Check if wsk was updated. If so, update the URL to point to the latest version
+				'copy:fonts',
 				'jekyll:appengine',		// Build the site with Jekyll
 			]);
 		} else {
@@ -414,6 +431,7 @@ module.exports = function(grunt) {
 				'compass:uncompressed',		// Build the CSS using Compass without compression
 				'cssmin',					// Minify the combined CSS
 				'wsk-version',  // Check if wsk was updated. If so, update the URL to point to the latest version
+				'copy:fonts',
 				'jekyll:appengine',		// Build the site with Jekyll
 			]);
 		}
@@ -451,6 +469,7 @@ module.exports = function(grunt) {
 			'cssmin',					// Minify the combined CSS
 			'clean:destination',		// Clean out the destination directory
 			'jekyll:develop',		// Build the site with Jekyll
+			'copy:fonts',
 			'open:index',
 			'connect:destination-source',
 			'watch'
@@ -470,6 +489,7 @@ module.exports = function(grunt) {
 			'cssmin',					// Minify the combined CSS
 			'clean:destination',		// Clean out the destination directory
 			'jekyll:devsite',			// Build the site with Jekyll
+			'copy:fonts',
 			'htmlmin:all'				// Minify the final HTML
 		]);
 
