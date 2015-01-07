@@ -2894,6 +2894,7 @@ body[dir=rtl] .editorial-header .container:before {
 .spotlight-header {
   padding-bottom: 26px;
   text-align: center;
+  background: #ffe168;
 }
 @media only screen and (min-width: 620px) {
   /* line 13, ../_sass/_modules/_spotlight-header.scss */
@@ -2902,8 +2903,20 @@ body[dir=rtl] .editorial-header .container:before {
     padding-bottom: 78px;
   }
 }
+/* line 24, ../_sass/_modules/_spotlight-header.scss */
+.spotlight-header .divider {
+  background-color: #C89800;
+}
+/* line 26, ../_sass/_modules/_spotlight-header.scss */
+.spotlight-header .divider span {
+  background: #ffe168;
+}
+/* line 29, ../_sass/_modules/_spotlight-header.scss */
+.spotlight-header .divider .divider-icon--secondary:before {
+  color: #937000;
+}
 
-/* line 23, ../_sass/_modules/_spotlight-header.scss */
+/* line 35, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header__excerpt {
   color: #404040;
   font-size: 20px;
@@ -2916,76 +2929,76 @@ body[dir=rtl] .editorial-header .container:before {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
 }
 
-/* line 28, ../_sass/_modules/_spotlight-header.scss */
+/* line 40, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header--landscape {
   overflow-x: hidden;
   position: relative;
 }
 @media only screen and (min-width: 620px) {
-  /* line 28, ../_sass/_modules/_spotlight-header.scss */
+  /* line 40, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header--landscape {
     min-height: 520px;
   }
 }
 @media only screen and (min-width: 620px) {
-  /* line 38, ../_sass/_modules/_spotlight-header.scss */
+  /* line 50, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header--landscape .spotlight-header__copy p {
     margin-bottom: 156px;
   }
 }
 
 @media only screen and (min-width: 620px) {
-  /* line 51, ../_sass/_modules/_spotlight-header.scss */
+  /* line 63, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header--portrait {
     min-height: 520px;
   }
 }
 
-/* line 57, ../_sass/_modules/_spotlight-header.scss */
+/* line 69, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header__container {
   position: relative;
 }
 
-/* line 63, ../_sass/_modules/_spotlight-header.scss */
+/* line 75, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header--detail .spotlight-header__container:after {
   display: none;
 }
 
-/* line 69, ../_sass/_modules/_spotlight-header.scss */
+/* line 81, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header__copy {
   position: relative;
   z-index: 2;
 }
 
-/* line 74, ../_sass/_modules/_spotlight-header.scss */
+/* line 86, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header__cta {
   margin-top: 26px;
 }
 
-/* line 79, ../_sass/_modules/_spotlight-header.scss */
+/* line 91, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header--portrait .spotlight-header__media {
   position: relative;
 }
 
-/* line 84, ../_sass/_modules/_spotlight-header.scss */
+/* line 96, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header__image {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 620px) {
-  /* line 84, ../_sass/_modules/_spotlight-header.scss */
+  /* line 96, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header__image {
     position: absolute;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
-/* line 93, ../_sass/_modules/_spotlight-header.scss */
+/* line 105, ../_sass/_modules/_spotlight-header.scss */
 .spotlight-header--portrait .spotlight-header__image {
   width: 100%;
   max-width: 100%;
 }
 @media only screen and (min-width: 620px) {
-  /* line 98, ../_sass/_modules/_spotlight-header.scss */
+  /* line 110, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header--landscape .spotlight-header__image {
     position: relative;
     width: auto;
@@ -2994,7 +3007,7 @@ body[dir=rtl] .editorial-header .container:before {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 98, ../_sass/_modules/_spotlight-header.scss */
+  /* line 110, ../_sass/_modules/_spotlight-header.scss */
   .spotlight-header--landscape .spotlight-header__image {
     height: 364px;
   }
@@ -4609,9 +4622,9 @@ body[dir=rtl] .editorial-header .container:before {
 **/
 /* line 13, ../_sass/_modules/_latest-spotlights.scss */
 .latest-spotlights {
-  background: #ffe168;
   padding-bottom: 55px;
   padding-top: 26px;
+  background: #ececec;
 }
 @media only screen and (min-width: 620px) {
   /* line 13, ../_sass/_modules/_latest-spotlights.scss */
@@ -5021,7 +5034,14 @@ body[dir=rtl] .editorial-header .container:before {
     width: 30.3%;
   }
 
-  /* line 75, ../_sass/_components/_grid.scss */
+  /* line 74, ../_sass/_components/_grid.scss */
+  .g--twothird {
+    float: left;
+    margin-right: 4.5%;
+    width: 60.6%;
+  }
+
+  /* line 80, ../_sass/_components/_grid.scss */
   .g--half,
   .g-medium--half {
     float: left;
@@ -5029,69 +5049,69 @@ body[dir=rtl] .editorial-header .container:before {
     width: 47.75%;
   }
 
-  /* line 80, ../_sass/_components/_grid.scss */
+  /* line 85, ../_sass/_components/_grid.scss */
   .g-medium--last {
     margin-right: 0;
   }
 
-  /* line 82, ../_sass/_components/_grid.scss */
+  /* line 87, ../_sass/_components/_grid.scss */
   .g--pull-half {
     margin-right: 52.25%;
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 89, ../_sass/_components/_grid.scss */
+  /* line 94, ../_sass/_components/_grid.scss */
   .g-wide--1 {
     float: left;
     margin-right: 3.7%;
     width: 22.2%;
   }
 
-  /* line 96, ../_sass/_components/_grid.scss */
+  /* line 101, ../_sass/_components/_grid.scss */
   .g-wide--push-1 {
     margin-left: 25.9%;
   }
 
-  /* line 99, ../_sass/_components/_grid.scss */
+  /* line 104, ../_sass/_components/_grid.scss */
   .g-wide--pull-1 {
     margin-right: 25.9%;
   }
 
-  /* line 89, ../_sass/_components/_grid.scss */
+  /* line 94, ../_sass/_components/_grid.scss */
   .g-wide--2 {
     float: left;
     margin-right: 3.7%;
     width: 48.1%;
   }
 
-  /* line 96, ../_sass/_components/_grid.scss */
+  /* line 101, ../_sass/_components/_grid.scss */
   .g-wide--push-2 {
     margin-left: 51.8%;
   }
 
-  /* line 99, ../_sass/_components/_grid.scss */
+  /* line 104, ../_sass/_components/_grid.scss */
   .g-wide--pull-2 {
     margin-right: 51.8%;
   }
 
-  /* line 89, ../_sass/_components/_grid.scss */
+  /* line 94, ../_sass/_components/_grid.scss */
   .g-wide--3 {
     float: left;
     margin-right: 3.7%;
     width: 74%;
   }
 
-  /* line 96, ../_sass/_components/_grid.scss */
+  /* line 101, ../_sass/_components/_grid.scss */
   .g-wide--push-3 {
     margin-left: 77.7%;
   }
 
-  /* line 99, ../_sass/_components/_grid.scss */
+  /* line 104, ../_sass/_components/_grid.scss */
   .g-wide--pull-3 {
     margin-right: 77.7%;
   }
 
-  /* line 89, ../_sass/_components/_grid.scss */
+  /* line 94, ../_sass/_components/_grid.scss */
   .g-wide--4 {
     float: left;
     margin-right: 3.7%;
@@ -5099,17 +5119,17 @@ body[dir=rtl] .editorial-header .container:before {
     margin-right: 0;
   }
 
-  /* line 105, ../_sass/_components/_grid.scss */
+  /* line 110, ../_sass/_components/_grid.scss */
   .g-wide--first {
     clear: both;
   }
 
-  /* line 107, ../_sass/_components/_grid.scss */
+  /* line 112, ../_sass/_components/_grid.scss */
   .g-wide--last {
     margin-right: 0;
   }
 
-  /* line 109, ../_sass/_components/_grid.scss */
+  /* line 114, ../_sass/_components/_grid.scss */
   .g-wide--full {
     float: left;
     margin-right: 3.7%;
@@ -5117,14 +5137,21 @@ body[dir=rtl] .editorial-header .container:before {
     width: 100%;
   }
 
-  /* line 115, ../_sass/_components/_grid.scss */
+  /* line 120, ../_sass/_components/_grid.scss */
+  .g--twothird {
+    float: left;
+    margin-right: 3.7%;
+    width: 61.6%;
+  }
+
+  /* line 125, ../_sass/_components/_grid.scss */
   .g--third {
     float: left;
     margin-right: 3.7%;
     width: 30.8%;
   }
 
-  /* line 121, ../_sass/_components/_grid.scss */
+  /* line 131, ../_sass/_components/_grid.scss */
   .g--half,
   .g-wide--half {
     float: left;
@@ -5132,31 +5159,31 @@ body[dir=rtl] .editorial-header .container:before {
     width: 48.15%;
   }
 
-  /* line 126, ../_sass/_components/_grid.scss */
+  /* line 136, ../_sass/_components/_grid.scss */
   .g--pull-half {
     margin-right: 51.85%;
   }
 }
 @media only screen and (min-width: 620px) {
-  /* line 136, ../_sass/_components/_grid.scss */
+  /* line 146, ../_sass/_components/_grid.scss */
   .g--last {
     margin-right: 0;
   }
 }
 
-/* line 144, ../_sass/_components/_grid.scss */
+/* line 154, ../_sass/_components/_grid.scss */
 .g--centered {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 153, ../_sass/_components/_grid.scss */
+/* line 163, ../_sass/_components/_grid.scss */
 .grid-overlay {
   display: none;
   pointer-events: none;
 }
-/* line 158, ../_sass/_components/_grid.scss */
+/* line 168, ../_sass/_components/_grid.scss */
 .debug .grid-overlay {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -5177,7 +5204,7 @@ body[dir=rtl] .editorial-header .container:before {
   display: block;
 }
 @media only screen and (min-width: 620px) {
-  /* line 158, ../_sass/_components/_grid.scss */
+  /* line 168, ../_sass/_components/_grid.scss */
   .debug .grid-overlay {
     padding-left: 30px;
     padding-right: 30px;
@@ -5185,26 +5212,26 @@ body[dir=rtl] .editorial-header .container:before {
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 158, ../_sass/_components/_grid.scss */
+  /* line 168, ../_sass/_components/_grid.scss */
   .debug .grid-overlay {
     padding-left: 35px;
     padding-right: 35px;
     max-width: 864px;
   }
 }
-/* line 170, ../_sass/_components/_grid.scss */
+/* line 180, ../_sass/_components/_grid.scss */
 .debug .grid-overlay [class*="g-"] {
   height: 100%;
   background-color: rgba(89, 89, 89, 0.2);
 }
 @media only screen and (min-width: 620px) and (max-width: 799px) {
-  /* line 176, ../_sass/_components/_grid.scss */
+  /* line 186, ../_sass/_components/_grid.scss */
   .debug .grid-overlay .g-wide--last {
     display: none;
   }
 }
 @media only screen and (max-width: 619px) {
-  /* line 158, ../_sass/_components/_grid.scss */
+  /* line 168, ../_sass/_components/_grid.scss */
   .debug .grid-overlay {
     display: none;
   }

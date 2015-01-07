@@ -11,13 +11,13 @@
 **/
 
 .latest-spotlights {
-  background: $colorYellowSecondary;
   padding-bottom: $lineHeight*2 + 3;
   padding-top: $lineHeight*1;
 
   @include medium {
     padding-top: $lineHeight*1;
   }
+  background: #ececec;
 }
 
 .latest-spotlights h2 {

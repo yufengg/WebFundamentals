@@ -35,7 +35,7 @@ NOTE: the spotlight header required a modifier to render properly
 
 <div class="latest-spotlights">
   <div class="container clear">
-    <h2 class="large">Also noteworthy</h2>
+    <h2 class="large">Also noteworthy this month</h2>
     <p class="g--half">Sites and apps we love, regardless of their mainstream success. Always pushing the web forward.</p>
 
     <ul class="latest-spotlights__list list-reset">
@@ -95,7 +95,7 @@ NOTE: the spotlight header required a modifier to render properly
       <div class="spotlights clear">
         <li class="featured-list__item clear g--half">
           <div class="container-small">
-            <div class="featured-list__content g--half">
+            <div class="featured-list__content g--twothird">
               <h3 class="xlarge">
                 <strong class="subsection-number">Spotlight</strong>
                 Some Spotlight
@@ -103,7 +103,7 @@ NOTE: the spotlight header required a modifier to render properly
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <a href="./example-spotlight" class="cta--primary">View Spotlight</a>
             </div>
-            <figure class="featured-list__img-wrapper g--half g--last">
+            <figure class="featured-list__img-wrapper g--third g--last">
               <img src="../../imgs/image-portrait.jpg" alt="image example">
             </figure>
           </div>
@@ -111,7 +111,7 @@ NOTE: the spotlight header required a modifier to render properly
 
         <li class="featured-list__item clear g--half g--last">
           <div class="container-small">
-            <div class="featured-list__content g--half">
+            <div class="featured-list__content g--twothird">
               <h3 class="xlarge">
                 <strong class="subsection-number">Spotlight</strong>
                 Some Spotlight
@@ -119,7 +119,7 @@ NOTE: the spotlight header required a modifier to render properly
               <p>Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
               <a href="./example-spotlight" class="cta--primary">View Spotlight</a>
             </div>
-            <figure class="featured-list__img-wrapper g--half g--last">
+            <figure class="featured-list__img-wrapper g--third g--last">
               <img src="../../imgs/image-portrait.jpg" alt="image example">
             </figure>
           </div>

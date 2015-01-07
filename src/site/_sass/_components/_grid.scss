@@ -71,6 +71,11 @@
     width: $mediumColWidth;
   }
 
+  .g--twothird {
+    @include rule--col(medium);
+    width: $mediumColWidth * 2;
+  }
+
   .g--half,
   .g-medium--half {
     @include rule--col(medium);
@@ -110,6 +115,11 @@
     @include rule--col(wide);
     margin-right: 0;
     width: 100%;
+  }
+
+  .g--twothird {
+    @include rule--col(wide);
+    width: 61.6%;
   }
 
   .g--third {

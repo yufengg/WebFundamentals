@@ -18,6 +18,18 @@
     text-align: left;
     padding-bottom: $lineHeight*3;
   }
+
+   background: $colorYellowSecondary;
+
+  .divider {
+    background-color: #C89800;
+    span {
+      background: $colorYellowSecondary;
+    }
+    .divider-icon--secondary:before {
+      color: #937000;
+    }
+  }
 }
 
 .spotlight-header__excerpt {
