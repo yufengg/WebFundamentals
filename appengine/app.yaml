@@ -1,6 +1,3 @@
-application: web-central
-version: 1
-
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -23,10 +20,14 @@ handlers:
   static_dir: build/imgs
   expiration: 1d
 
-- url: /web/(.*\.(png|gif|jpg|svg|xml))
+- url: /web/fundamentals/resources/samples
+  static_dir: build/_langs/en/fundamentals/resources/samples
+  expiration: 1d
+
+- url: /web/(.*\.(png|gif|jpg|svg|xml|mp4|mp3))
   static_files: build/_langs/en/\1
   expiration: 1d
-  upload: build/_langs/en/(.*\.(png|gif|jpg|svg|xml))
+  upload: build/_langs/en/(.*\.(png|gif|jpg|svg|xml|mp4|mp3))
 
 - url: /web/(.*\.ico)
   static_files: build/_langs/en/\1
@@ -39,6 +40,10 @@ handlers:
   upload: build/(.*\.(woff|eot|ttf|css))
   http_headers:
     Access-Control-Allow-Origin: https://developers.google.com
+
+- url: /web
+  script: main.app
+  secure: always
 
 - url: /web/(.*)
   script: main.app

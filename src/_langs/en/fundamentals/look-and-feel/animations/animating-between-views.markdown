@@ -5,13 +5,14 @@ description: "Learn how to animate between two views in your apps."
 introduction: "Many times you will want to move users between views in your application, whether that's a list to a details view, or show a sidebar navigation. Animations between these views are great for keeping the user engaged and add even more life to your projects."
 article:
   written_on: 2014-08-08
-  updated_on: 2014-10-20
+  updated_on: 2014-10-22
   order: 5
 collection: animations
 id: animating-between-views
+priority: 0
 key-takeaways:
   code:
-    - Use transitions to move between views; avoid using `left`, `top` or any other property that triggers layout.
+    - Use translations to move between views; avoid using `left`, `top` or any other property that triggers layout.
     - Ensure any animations you use are snappy and the durations are kept short.
     - Consider how your animations and layouts change as the screen sizes go up; what works for a smaller screen may look odd when  used in a desktop context.
 notes:

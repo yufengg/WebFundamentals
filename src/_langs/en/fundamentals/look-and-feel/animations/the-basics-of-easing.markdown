@@ -5,10 +5,11 @@ description: "Learn how to soften and give weighting to your animations."
 introduction: "Nothing in nature moves linearly from one point to another. In reality things tend to accelerate or decelerate as they move. Our brains are wired to expect this kind of motion, so when animating you should use this to your advantage. Natural motion will make your users feel more comfortable with your apps, which in turn leads to a better overall experience."
 article:
   written_on: 2014-08-08
-  updated_on: 2014-09-19
+  updated_on: 2014-10-21
   order: 3
 id: the-basics-of-easing
 collection: animations
+priority: 0
 key-takeaways:
   code:
     - Easing makes your animations feel more natural.
@@ -37,7 +38,7 @@ Here are some of the keywords that you can use in CSS:
 
 Source: [CSS Transitions, W3C](http://www.w3.org/TR/css3-transitions/#transition-timing-function-property)
 
-You can also you use a `steps` keyword, which allows you to create transitions that have discrete steps, but those listed above are the most useful for creating animations that feel natural, and that’s exactly what you'll want.
+You can also use a `steps` keyword, which allows you to create transitions that have discrete steps, but those listed above are the most useful for creating animations that feel natural, and that’s exactly what you'll want.
 
 ## Linear animations
 

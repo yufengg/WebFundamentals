@@ -1,6 +1,27 @@
 <meta name="google-site-verification" content="zFM_etMkM6oOvH6CNip7QxEbslAw6kJ2kiGJBYYBIcA" />
-{% capture page_title %}{% if page.id != "home" %}{{ page.title }} — Web Fundamentals{%else%}Web Fundamentals — Google Developers{%endif%}{% endcapture %}
-<title>{{ page_title }}</title>
+{% capture page_title %}
+{% if page.meta_title %}
+	{{ page.meta_title }}
+{% else %}
+
+	{% case page.collection %}
+	{% when 'updates' %}
+		{{ page.title }} — Google Web Updates
+	{% when 'showcase' %}
+		{{ page.title }} — Google Web Showcase
+	{% when 'case-study' %}
+		{{ page.title }} — Google Web Showcase
+	{% when 'spotlight' %}
+		{{ page.title }} — Google Web Showcase
+	{% when 'tools' %}
+		{{ page.title }}
+	{% else %}
+		{{ page.title }} — Web Fundamentals
+	{% endcase %}
+
+{% endif %}
+{% endcapture %}
+<title>{{ page_title | trim }}</title>
 
 {% assign author = page.authors[0] %}
 {% assign main_author = site.data["contributors"][author]%}
@@ -10,7 +31,7 @@
 {% endif %}
 
 {% if page.description %}
-<meta name="description" content="{{ page.description }}" />
+<meta name="description" content="{{ page.description | strip_html }}" />
 {% else %}
 <meta name="description" content="Google Web Fundamentals" />
 {% endif %}
@@ -22,7 +43,20 @@
 <link rel="alternate" hreflang="{{translated_page.langcode}}" href="/web{{page.url}}?hl={{translated_page.langcode}}" />
 {% endfor %}
 
-<link rel="alternate" type="application/rss+xml" title="All" href="{{site.baseurl}}/fundamentals/feed.xml">
+{% if page.nofeed != true %}
+  {% if page.filepath contains "updates"%}
+<link rel="alternate" type="application/rss+xml" title="Updates RSS" href="{{site.baseurl}}/updates/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Updates RSS" href="{{site.baseurl}}/updates/atom.xml">	
+  {% elsif page.feedPath %}
+<link rel="alternate" type="application/rss+xml" title="{{page.feedName}}" href="{{site.baseurl}}/{{page.feedPath}}">
+	{% elsif include.feedURL %}
+<link rel="alternate" type="application/rss+xml" title="{{include.feedName}}" href="{{include.feedURL}}">
+  {% elsif page.feedURL %}
+<link rel="alternate" type="application/rss+xml" title="{{page.feedName}}" href="{{page.feedURL}}">
+	{% else %}
+<link rel="alternate" type="application/rss+xml" title="Fundamentals" href="{{site.baseurl}}/fundamentals/feed.xml">
+	{% endif %}
+{% endif %}
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,7 +65,7 @@
 {% if page.thumbnail %}<meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}
 <meta name="twitter:account_id" content="@chromiumdev" />
 <meta name="twitter:site" content="@chromiumdev" />
-<meta name="twitter:description" content="{{page.description}}" />
+<meta name="twitter:description" content="{{ page.description | strip_html }}" />
 {% if main_author.twitter %}<meta name="twitter:creator" content="{{ main_author.twitter }}" />{% else %}<meta name="twitter:creator" content="@chromiumdev" />{% endif%}
 {% if page.thumbnail %}<meta name="twitter:image:src" content="https://developers.google.com/{{site.baseurl}}{{ page.filepath }}/{{ page.thumbnail }}" />
 {% else %}<meta name="twitter:image:src" content="https://developers.google.com/web/imgs/logo.png" />{% endif %}
@@ -40,14 +74,14 @@
 {% if main_author.google %}<link rel="author" href="https://plus.google.com/{{ main_author.google }}/posts">{% endif %}
 <link rel="publisher" href="https://plus.google.com/+GoogleChromeDevelopers">
 
-<meta itemprop="name" content="{{ page_title }}">
+<meta itemprop="name" content="{{ page_title | trim }}">
 {% if page.thumbnail %}<link itemprop="image" href="https://developers.google.com/{{site.baseurl}}{{ page.filepath }}/{{ page.thumbnail }}">{% else %}<link itemprop="image" href="https://developers.google.com/web/imgs/logo.png">{% endif %}
-<meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}Google Web Fundamentals{% endif %}">
+<meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}Google Web Fundamentals{% endif %}">
 
 <meta property="og:site_name" content="Web Fundamentals" />
-<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:title" content="{{ page_title | trim }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://developers.google.com/web/fundamentals/" />
+<meta property="og:url" content="https://developers.google.com/web/fundamentals/" />
 {% if page.snippet_img %}<meta property="og:image" content="https://developers.google.com/{{site.fundamentals}}{{ page.filepath }}/{{ page.thumbnail }}" />
 {% else %}<meta property="og:image" content="https://developers.google.com/web/imgs/logo.png" />{% endif %}
 <meta property="og:publisher" content="https://www.facebook.com/googlechrome" />
@@ -82,6 +116,6 @@ Adds themed colors for web site stickiness.
 <meta name="theme-color" content="#4285f4">
 {% endif %}
 
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="{{site.baseurl}}/manifest.json">
 
 <link rel="stylesheet" media="screen" href="{{site.baseurl}}/css/styles.min.css" />

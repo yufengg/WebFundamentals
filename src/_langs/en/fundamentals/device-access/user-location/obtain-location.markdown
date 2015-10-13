@@ -5,8 +5,9 @@ introduction: "The Geolocation API lets you find out where the user is, always w
 description: "The Geolocation API lets you find out where the user is, always with the user's consent."
 article:
   written_on: 2014-06-06
-  updated_on: 2014-09-19
+  updated_on: 2014-10-21
   order: 1
+priority: 1
 authors:
   - paulkinlan
 collection: user-location
@@ -116,7 +117,7 @@ window.onload = function() {
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
   };
-  var geoError = function(position) {
+  var geoError = function(error) {
     console.log('Error occurred. Error code: ' + error.code);
     // error.code can be:
     //   0: unknown error

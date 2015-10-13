@@ -25,6 +25,9 @@ import re
 
 from google.appengine.ext.webapp.template import render
 
+class HomePage(webapp2.RequestHandler):
+    def get(self):
+        self.redirect("/web/", permanent=True)
 
 class AllPages(webapp2.RequestHandler):
     def get(self, path):
@@ -56,12 +59,17 @@ class AllPages(webapp2.RequestHandler):
           text = render("wrapper.tpl", {"content": file_path, "lang": "en"})
 
         if text is None:
+          logging.warning("--- Requested file not found")
+          logging.warning(" - lang: " + lang)
+          logging.warning(" - path: " + path)
+          logging.warning(" - file_path: " + file_path)
           text = "404 - Requested file not found."
           self.response.set_status(404)
 
         self.response.out.write(text)
 
 app = webapp2.WSGIApplication([
+    ('/web', HomePage),
     ('/web/(.+)/', AllPages),
     ('/web/(.*)', AllPages)
 ], debug=True)

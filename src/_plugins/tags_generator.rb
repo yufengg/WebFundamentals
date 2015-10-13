@@ -22,6 +22,10 @@ module Jekyll
     def generate(site)
       spotlights = site.data['articles']['spotlight']
 
+      if spotlights.nil?
+        return
+      end
+
       tags = []
       tag_spotlights = {}
 
@@ -37,7 +41,7 @@ module Jekyll
 
       tags.each do |tag|
         tag_spotlights[tag].uniq!
-        site.pages << TagPage.new(site, site.source, File.join('_langs', site.data['curr_lang'], 'fundamentals', 'showcase', 'spotlight', 'tags'), tag, tag_spotlights[tag])
+        site.pages << TagPage.new(site, site.source, File.join('_langs', site.data['curr_lang'], 'showcase', 'spotlight', 'tags'), tag, tag_spotlights[tag])
       end
 
       site.data['tags'] = tags

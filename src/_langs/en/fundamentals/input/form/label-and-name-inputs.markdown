@@ -5,10 +5,11 @@ description: "Forms are hard to fill out on mobile. The best forms are the ones 
 introduction: "Forms are hard to fill out on mobile. The best forms are the ones with the fewest inputs. Good forms provide semantic input types. Keys should change to match the user's input type; users pick a date in a calendar. Keep your user informed. Validation tools should tell the user what they need to do before submitting the form."
 article:
   written_on: 2014-04-30
-  updated_on: 2014-04-30
+  updated_on: 2015-03-27
   order: 3
 authors:
   - petelepage
+priority: 0
 collection: form-input
 key-takeaways:
   label-and-name:
@@ -23,7 +24,10 @@ remember:
       they are not a replacement for labels.  They should be used as an aid
       to help guide users on the required format and content.
   recommend-input:
-    - Auto-complete only works when the form method is post.
+    - Use either only <code>street-address</code> or both <code>address-line1</code>
+      and <code>address-line2</code>
+    - <code>address-level1</code> and <code>address-level2</code> are only 
+      necessary if they're required for your address format.
   use-datalist:
     - The <code>datalist</code> values are provided as suggestions, and users
       are not restricted to the suggestions provided.
@@ -126,11 +130,16 @@ the users name, email address and phone number, you should use:
   table ul { padding: 13px 0; }
 </style>
 
-`autocomplete` attribute values are part of the [HTML Autofill spec](https://html.spec.whatwg.org/multipage/forms.html#autofill). The most commonly used `autocomplete` attributes are shown below.
+`autocomplete` attribute values are part of the current [WHATWG HTML Standard](https://html.spec.whatwg.org/multipage/forms.html#autofill). The most commonly used `autocomplete` attributes are shown below.
 
-The `autocomplete` attributes should be prefixed with either `shipping` or `billing`, depending on the context.
+The `autocomplete` attributes can be accompanied with a section name, such as **`shipping `**`given-name` or **`billing `**`street-address`. The browser will auto-complete different sections separately, and not as a continuous form.
 
 <table class="table-3 autocompletes">
+  <colgroup>
+    <col span="1">
+    <col span="1">
+    <col span="1">
+  </colgroup>
   <thead>
     <tr>
       <th data-th="Content type">Content type</th>
@@ -176,9 +185,19 @@ The `autocomplete` attributes should be prefixed with either `shipping` or `bill
       </td>
       <td data-th="autocomplete attribute">
         <ul>
-          <li><code>street-address</code></li>
-          <li><code>address-level-1</code> (state or province)</li>
-          <li><code>address-level-2</code> (city)</li>
+          <li>For one address input:
+            <ul>
+              <li><code>street-address</code></li>
+            </ul>
+          </li>
+          <li>For two address inputs:
+            <ul>
+              <li><code>address-line1</code></li>
+              <li><code>address-line2</code></li>
+            </ul>
+          </li>
+          <li><code>address-level1</code> (state or province)</li>
+          <li><code>address-level2</code> (city)</li>
           <li><code>postal-code</code> (zip code)</li>
           <li><code>country</code></li>
         </ul>
@@ -217,6 +236,29 @@ The `autocomplete` attributes should be prefixed with either `shipping` or `bill
           <li><code>cc-exp-year</code></li>
           <li><code>cc-exp</code></li>
           <li><code>cc-type</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td data-th="Content type">Usernames</td>
+      <td data-th="name attribute">
+        <code>username</code>
+      </td>
+      <td data-th="autocomplete attribute">
+        <ul>
+          <li><code>username</code></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td data-th="Content type">Passwords</td>
+      <td data-th="name attribute">
+        <code>password</code>
+      </td>
+      <td data-th="autocomplete attribute">
+        <ul>
+          <li><code>current-password</code> (for sign-in forms)</li>
+          <li><code>new-password</code> (for sign-up and password-change forms)</li>
         </ul>
       </td>
     </tr>

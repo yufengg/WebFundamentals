@@ -2,7 +2,7 @@
   </head>
 
   <body {% if page.rtl == true %}dir="rtl" {% endif %}class="page--article article--{{page.collection}} theme--{{page.collection}}" itemscope itemtype="http://schema.org/TechArticle">
-    {% injectdata content _betterbook.yaml %}
+    {% injectdata content _betterbook-wf.yaml %}
 
     {% include header.liquid %}
 
@@ -15,6 +15,8 @@
 
             <h1 class="tag editorial-header__title">{{ page.parent.title }}</h1>
             <h2 class="editorial-header__subtitle" itemprop="name">{{page.title}}</h2>
+
+            {% include modules/author_header.liquid %}
 
             <p class="editorial-header__excerpt" itemprop="headline">{{page.introduction}}</p>
 

@@ -96,7 +96,7 @@ module Jekyll
           filepath.sub!("_langs/" + lang + "/", "_langs/en/")
         end
         String file = File.join(path, filepath)
-        contents = File.read(file)
+        contents = File.read(file).force_encoding('UTF-8')
         snippet = getmatch(contents, @lang, @section)
         @@comment_formats.each do |lang, parms|
             match = getmatcher_tag(lang, "[^\\]]+", "\\w+")
@@ -143,6 +143,7 @@ module Jekyll
       end
 
       relpath = filepath.sub("_langs/en/fundamentals/", "")
+      relpath = relpath.sub("_langs/en/tools/", "tools/")
 
       page = context.environments.first["page"]
       site = context.registers[:site]
@@ -155,7 +156,7 @@ module Jekyll
   </div>
   <div dir="ltr" class="highlight-module highlight-module--code highlight-module--right">
     <div class="highlight-module__container">
-      <code class='html'>#{highlighted_code.strip}</code>                                                     
+      <code class='html'>#{highlighted_code.strip}</code>                                                  
       <a class="highlight-module__cta button--primary" href="#{context.registers[:site].config["sample_link_base"]}#{relpath}">#{link_text}</a>
     </div>
   </div>
